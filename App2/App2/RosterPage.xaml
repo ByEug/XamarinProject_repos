@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.RosterPage"
+             BackgroundImageSource="mj.jpg">
+
+    <ListView ItemsSource="{Binding}" x:Name="RosterList" HasUnevenRows="True" ItemTapped="SelectedPlayer">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout>
+                            <!--Label Text="{Binding Number}" TextColor="Blue" FontSize="22"/-->
+                            <!--Label Text="{Binding Name}" TextColor="Blue" FontSize="22"/-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <Label
+                                    Text="{Binding Surname}"  
+                                    Grid.Column="0" 
+                                    Grid.Row="0"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="WhiteSmoke"
+                                    FontAttributes="Bold"
+                                    FontSize="22"
+                                />
+
+                                <Label
+                                    Text="{Binding Number}"  
+                                    Grid.Column="0" 
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="LightBlue"
+                                    FontSize="16"
+                                />
+
+                                <Label
+                                    Text="{Binding Position}"  
+                                    Grid.Column="1" 
+                                    Grid.Row="0"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="WhiteSmoke"
+                                    FontSize="20"
+                                />
+
+                                <Label
+                                    Text="{Binding Club}"  
+                                    Grid.Column="1" 
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="LightBlue"
+                                    FontSize="16"
+                                />
+
+                                <Button
+                                    BackgroundColor="Transparent"
+                                    ImageSource="{Binding ClubLogo}"
+                                    Grid.Column="2" 
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                />
+
+
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

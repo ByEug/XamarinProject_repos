@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i18n="clr-namespace:LocalizationSample.Helpers;assembly=App2"
+             xmlns:local="clr-namespace:App2"
+             mc:Ignorable="d"
+             x:Class="App2.SettingsPage"
+             BackgroundImageSource="shield2.jpg">
+
+    <TableView>
+        <TableView.Root>
+            <TableRoot>
+                <TableSection x:Name="LanguageTitle" Title="{i18n:Translate SettingsUp}">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label 
+                                Margin="17,0,0,0"
+                                x:Name="LabelLang"
+                                Text="{i18n:Translate LanguageLabel}"  
+                                VerticalTextAlignment="Center"
+                            />
+                            <Picker WidthRequest="300" x:Name="PickerLanguages" ItemsSource="{Binding Languages}" ItemDisplayBinding="{Binding DisplayName}">
+
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+                    <SwitchCell x:Name="SwitchAnimation" Text="{i18n:Translate SwitchSet}" OnChanged="ClickedOn">
+
+                    </SwitchCell>
+                </TableSection>
+            </TableRoot>
+        </TableView.Root> 
+    </TableView>
+</ContentPage>

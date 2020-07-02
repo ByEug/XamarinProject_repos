@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i18n="clr-namespace:LocalizationSample.Helpers;assembly=App2"
+             xmlns:local="clr-namespace:App2"
+             mc:Ignorable="d"
+             x:Class="App2.PageWithTeam"
+             BackgroundImageSource="shield2.jpg">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+
+            <Label
+                Text="{Binding City}"
+                Grid.Column="0" 
+                Grid.Row="0"
+                TextColor="Black"
+                FontSize="35"
+                FontAttributes="Bold"
+                VerticalTextAlignment="End"
+                HorizontalTextAlignment="Center"
+                />
+            <Label
+                x:Name="LabelWithName"
+                Text="{Binding Name}"
+                Grid.Column="0" 
+                Grid.Row="1"
+                TextColor="Black"
+                FontSize="35"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Start"
+                HorizontalTextAlignment="Center"
+                />
+            <Button
+                BackgroundColor="Transparent"
+                ImageSource="{Binding Pict}"
+                Grid.Column="1" 
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                />
+            <Label
+                Text="{i18n:Translate FoundationLabel}"
+                Grid.Column="0" 
+                Grid.Row="2"
+                TextColor="WhiteSmoke"
+                FontSize="22"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Margin="10,0,0,0"
+                />
+            <Label
+                Text="{Binding Year}"
+                Grid.Column="1" 
+                Grid.Row="2"
+                TextColor="WhiteSmoke"
+                FontSize="22"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Margin="10,0,0,0"
+                />
+        </Grid>
+        <Label
+            Text="{Binding ChampAmount}"
+            TextColor="WhiteSmoke"
+            FontSize="22"
+            FontAttributes="Bold"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Start"
+            Margin="10,0,0,0"
+            />
+        <Label
+            Text="{Binding Conference}"
+            TextColor="WhiteSmoke"
+            FontSize="22"
+            FontAttributes="Bold"
+            Margin="10,0,0,0"
+            />
+        <CarouselView HeightRequest="280" HorizontalOptions="FillAndExpand" x:Name="Structure" ItemsSource="{Binding Things}">
+            
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding PictName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" FontSize="22" FontAttributes="Bold"/>
+                        <Image  Source="{Binding Pict}" WidthRequest="410"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+        <Button
+            x:Name="Roster"
+            Clicked="ClickOnRoster"
+            
+            TextColor="WhiteSmoke"
+            Font="25"
+            BorderWidth="3" 
+            BorderColor="WhiteSmoke" 
+            FontAttributes="Bold"
+            BackgroundColor="Transparent"
+            Margin="10,0,10,0"
+            VerticalOptions="Start"
+            />
+        <!--Button
+            BackgroundColor="Transparent" 
+            x:Name="Roster" 
+            Font="25" 
+            FontAttributes="Bold" 
+            TextColor="WhiteSmoke" 
+            BorderWidth="3" 
+            BorderColor="WhiteSmoke" 
+            VerticalOptions="End"  
+            Margin="10,0,10,5"
+            Text="Roster"
+            /-->
+ 
+    </StackLayout>
+    
+
+</ContentPage>

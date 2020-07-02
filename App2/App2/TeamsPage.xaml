@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.TeamsPage"
+             BackgroundImageSource="shield2.jpg">
+    <ContentPage.Content>
+
+       
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+
+
+            <Button Clicked="Celtics" ImageSource="boston.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="0" />
+            <Button Clicked="Heat" ImageSource="miami.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="1" />
+            <Button Clicked="Knicks" ImageSource="new_york.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="2" />
+            <Button Clicked="Lakers" ImageSource="lalakers.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="3" />
+            <Button Clicked="Spurs" ImageSource="sanantonio.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="4" />
+            <Button Clicked="Trailblazers" ImageSource="portland.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="0" Grid.Row="5" />
+
+            <Button Clicked="Cavaliers" ImageSource="cleveland.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="0" />
+            <Button Clicked="Nets" ImageSource="brooklyn.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="1" />
+            <Button Clicked="Sixers" ImageSource="philadelphia.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="2" />
+            <Button Clicked="Rockets" ImageSource="houston.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="3" />
+            <Button Clicked="Suns" ImageSource="phoenix.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="4" />
+            <Button Clicked="Nuggets" ImageSource="denver.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="1" Grid.Row="5" />
+
+            <Button Clicked="Raptors" ImageSource="toronto.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="0" />
+            <Button Clicked="Pistons" ImageSource="detroit.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="1" />
+            <Button Clicked="Hawks" ImageSource="atlanta.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="2" />
+            <Button Clicked="Jazz" ImageSource="utah.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="3" />
+            <Button Clicked="Mavericks" ImageSource="dallas.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="4" />
+            <Button Clicked="Pelicans" ImageSource="neworleans.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="2" Grid.Row="5" />
+
+            <Button Clicked="Bulls" ImageSource="chicago.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="0" />
+            <Button Clicked="Pacers" ImageSource="indiana.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="1" />
+            <Button Clicked="Hornets" ImageSource="charlotte.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="2" />
+            <Button Clicked="Thunder" ImageSource="oklahoma.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="3" />
+            <Button Clicked="Warriors" ImageSource="gsw.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="4" />
+            <Button Clicked="Kings" ImageSource="sacramento.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="3" Grid.Row="5" />
+
+            <Button Clicked="Magic" ImageSource="orlando.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="0" />
+            <Button Clicked="Bucks" ImageSource="milwaukee.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="1" />
+            <Button Clicked="Wizards" ImageSource="washington.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="2" />
+            <Button Clicked="Timberwolves" ImageSource="minnesota.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="3" />
+            <Button Clicked="Clippers" ImageSource="laclippers.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="4" />
+            <Button Clicked="Grizzlies" ImageSource="memphis.png" BackgroundColor="Transparent" BorderWidth="3" BorderColor="WhiteSmoke" Grid.Column="4" Grid.Row="5" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

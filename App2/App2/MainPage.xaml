@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i18n="clr-namespace:LocalizationSample.Helpers;assembly=App2"
+             xmlns:local="clr-namespace:App2"
+             mc:Ignorable="d"
+             x:Class="App2.MainPage"
+             BackgroundImageSource="shield.png">
+    
+
+    <StackLayout>
+
+            <!--Place new controls here-->
+        <Image
+            Margin="20,0,20,50"
+            Source="nbalogolabel.png"
+            VerticalOptions="EndAndExpand"
+        />
+
+        <Button
+                BackgroundColor="Transparent" 
+                x:Name="Teams" 
+                Font="25" 
+                FontAttributes="Bold" 
+                TextColor="WhiteSmoke" 
+                BorderWidth="3" 
+                BorderColor="WhiteSmoke" 
+                VerticalOptions="End" 
+                Clicked="ClickOnTeams" 
+                Margin="10,0,10,5"
+                Text="Teams"
+        />
+        
+            <Button 
+                BackgroundColor="Transparent" 
+                x:Name="Players" 
+                Font="25" 
+                FontAttributes="Bold" 
+                TextColor="WhiteSmoke" 
+                BorderWidth="3" 
+                BorderColor="WhiteSmoke" 
+                VerticalOptions="End"
+                Clicked="ClickOnPlayers" 
+                Margin="10,5,10,0"
+            />
+
+    </StackLayout>
+
+   
+
+</ContentPage>
